@@ -1,12 +1,9 @@
 $(document).ready(function(){
 	$(".new-btn").click(function(){
-		$(this).addClass('select');
-	});
-});
-
-$(document).ready(function(){
-	$(".cross").click(function(){
-		$(".new-btn").removeClass('select');
+		$(".new-btn").toggleClass('select');
+		$("#close").click(function(){
+			$(".new-btn").toggleClass('select');
+		});
 	});
 });
 

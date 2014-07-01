@@ -29,9 +29,11 @@ html, body {
 
 	.cross {
 		position: absolute;
-		right: 0;
+		right: 0px;
+		margin-right: -100px;
 		margin: 55px;
 		display: none;
+		transition: margin-right 0.5s ease;
 	}
 }
 
@@ -58,14 +60,18 @@ html, body {
 	    top: 20%;
 	    -ms-transform: translateY(-50%);
 	    -webkit-transform: translateY(-50%);
-	    transform: translateY(-50%);	
+	    transform: translateY(-50%);
+	    z-index: 1;	
 	}
 
 	.cross {
 		display: block;
 		position: absolute;
 		right: 0;
+		margin-right: 0px;
 		margin: 55px;
+		right: 0;
+		z-index: 2;
 	}
 }
 
