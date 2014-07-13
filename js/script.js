@@ -1,0 +1,47 @@
+$(document).ready(function(){
+	$(".new-btn").click(function(){
+		$(".new-btn").toggleClass('select');
+		$("#close").click(function(){
+			$(".new-btn").toggleClass('select');
+		});
+	});
+});
+
+$(document).ready(function(){
+	$(".today-btn").click(function(){
+		$(".today-btn").toggleClass('select');
+		$(".new-btn").toggleClass('non-select');
+		$("#close").click(function(){
+			$(".today-btn").toggleClass('select');
+			$(".new-btn").toggleClass('non-select');
+		});
+	});
+});
+
+$(document).ready(function(){
+	$(".soon-btn").click(function(){
+		$(".soon-btn").toggleClass('select');
+		$(".new-btn").toggleClass('non-select');
+		$(".today-btn").toggleClass('non-select');
+		$("#close").click(function(){
+			$(".soon-btn").toggleClass('select');
+			$(".new-btn").toggleClass('non-select');
+			$(".today-btn").toggleClass('select');
+		});
+	});
+});
+
+$(document).ready(function(){
+	$(".past-btn").click(function(){
+		$(".past-btn").toggleClass('select');
+		$(".new-btn").toggleClass('non-select');
+		$(".today-btn").toggleClass('non-select');
+		$(".soon-btn").toggleClass('non-select');
+		$("#close").click(function(){
+			$(".soon-btn").toggleClass('select');
+			$(".new-btn").toggleClass('non-select');
+			$(".today-btn").toggleClass('select');
+			$(".soon-btn").toggleClass('non-select');
+		});
+	});
+});
